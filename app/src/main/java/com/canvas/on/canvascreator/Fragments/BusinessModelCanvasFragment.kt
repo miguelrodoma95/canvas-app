@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import com.canvas.on.canvascreator.CanvasViewModel.CanvasViewModel
 import com.canvas.on.canvascreator.R
@@ -15,6 +16,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class BusinessModelCanvasFragment : Fragment() {
 
     lateinit var canvasVM: CanvasViewModel
+    lateinit var tvProjectName: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,11 +30,10 @@ class BusinessModelCanvasFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         canvasVM =  activity.run {
-
-            
             ViewModelProviders.of(this!!).get(CanvasViewModel::class.java)
         }
 
-        Toast.makeText(activity!!, "Name: "+canvasVM.projectName, Toast.LENGTH_SHORT).show()
+        tvProjectName = activity!!.findViewById(R.id.tv_projectName)
+        tvProjectName.text = canvasVM.projectName
     }
 }
