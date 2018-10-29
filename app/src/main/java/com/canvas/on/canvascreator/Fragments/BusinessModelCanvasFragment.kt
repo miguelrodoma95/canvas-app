@@ -28,6 +28,8 @@ class BusinessModelCanvasFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         canvasVM =  activity.run {
+
+            
             ViewModelProviders.of(this!!).get(CanvasViewModel::class.java)
         }
 
