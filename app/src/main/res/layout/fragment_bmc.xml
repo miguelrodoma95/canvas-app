@@ -16,119 +16,150 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_height="300dp"
         android:layout_marginTop="50dp"
         android:layout_below="@+id/tv_projectName">
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
             android:orientation="vertical"
             android:background="@drawable/border">
 
             <LinearLayout
                 android:id="@+id/ll_upper_canvas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0px"
+                android:layout_weight="0.7"
                 android:background="@drawable/border">
 
                 <LinearLayout
                     android:id="@+id/ll_key_partners"
-                    android:layout_width="77dp"
-                    android:layout_height="190dp"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
                     android:background="@drawable/border">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Key Partners"/>
+                        android:text="Key Partners"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/canvas_title_textsisze"
+                        android:textColor="@color/black"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/ll_keys"
-                    android:layout_width="77dp"
-                    android:layout_height="190dp"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="95dp"
+                        android:layout_height="0px"
+                        android:layout_weight="0.5"
                         android:background="@drawable/border">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Key Activities"/>
+                            android:text="Key Activities"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/canvas_title_textsisze"
+                            android:textColor="@color/black"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="95dp"
+                        android:layout_height="0px"
+                        android:layout_weight="0.5"
                         android:background="@drawable/border">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Key Resources"/>
+                            android:text="Key Resources"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/canvas_title_textsisze"
+                            android:textColor="@color/black"/>
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/ll_value_proposition"
-                    android:layout_width="77dp"
-                    android:layout_height="190dp"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
                     android:background="@drawable/border">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Value Proposition"/>
+                        android:text="Value Proposition"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/canvas_title_textsisze"
+                        android:textColor="@color/black"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/ll_customers"
-                    android:layout_width="77dp"
-                    android:layout_height="190dp"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
                     android:orientation="vertical"
                     android:background="@drawable/border">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="95dp"
+                        android:layout_height="0px"
+                        android:layout_weight="0.5"
                         android:background="@drawable/border">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Customer Relationships"/>
+                            android:text="Customer Relationships"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/canvas_title_textsisze"
+                            android:textColor="@color/black"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="95dp"
+                        android:layout_height="0px"
+                        android:layout_weight="0.5"
                         android:background="@drawable/border">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Channels"/>
+                            android:text="Channels"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/canvas_title_textsisze"
+                            android:textColor="@color/black"/>
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/ll_customer_segments"
-                    android:layout_width="77dp"
-                    android:layout_height="190dp"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
                     android:background="@drawable/border">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Customer Segments"/>
+                        android:text="Customer Segments"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/canvas_title_textsisze"
+                        android:textColor="@color/black"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -136,32 +167,41 @@
             <LinearLayout
                 android:id="@+id/ll_lower_canvas"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.3"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/ll_cost_structure"
-                    android:layout_width="192.5dp"
+                    android:layout_width="0px"
                     android:layout_height="match_parent"
+                    android:layout_weight="0.5"
                     android:background="@drawable/border">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Cost Structure"/>
+                        android:text="Cost Structure"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/canvas_title_textsisze"
+                        android:textColor="@color/black"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/ll_revenue_streams"
-                    android:layout_width="192.5dp"
+                    android:layout_width="0px"
                     android:layout_height="match_parent"
+                    android:layout_weight="0.5"
                     android:background="@drawable/border">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Revenue Streams"/>
+                        android:text="Revenue Streams"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/canvas_title_textsisze"
+                        android:textColor="@color/black"/>
 
                 </LinearLayout>
 

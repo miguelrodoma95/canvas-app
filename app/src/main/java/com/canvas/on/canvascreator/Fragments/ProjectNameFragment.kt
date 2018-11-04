@@ -1,8 +1,6 @@
 package com.canvas.on.canvascreator.Fragments
 
-import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.text.TextUtils
@@ -29,7 +27,7 @@ class ProjectNameFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fraagment_project_name,fl_container , false)
+        return inflater.inflate(R.layout.fragment_project_name,fl_container , false)
 
     }
 
